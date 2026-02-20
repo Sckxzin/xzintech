@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xzin Tech | Sistemas e Automação</title>
   <meta name="description" content="Sistemas sob medida, automação e organização de dados para empresas. Orçamento direto no WhatsApp." />
+
   <style>
     :root{
       --bg1:#070b16; --bg2:#0b1632;
@@ -26,7 +27,7 @@
     .wrap{max-width:980px; margin:0 auto; padding:28px 18px 92px;}
     .top{
       display:flex; gap:18px; align-items:center; justify-content:space-between;
-      padding:18px 18px; border:1px solid var(--stroke); border-radius:18px;
+      padding:18px; border:1px solid var(--stroke); border-radius:18px;
       background:rgba(0,0,0,.18); box-shadow: var(--shadow);
     }
     .brand{display:flex; gap:14px; align-items:center;}
@@ -38,25 +39,28 @@
       overflow:hidden;
     }
     .logo img{width:100%; height:100%; object-fit:cover;}
-    .title{line-height:1.1}
-    .title h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .title h1{margin:0; font-size:22px}
     .title p{margin:6px 0 0; color:var(--muted); font-size:13px}
     .pill{
-      display:inline-flex; gap:8px; align-items:center;
       padding:10px 12px; border-radius:999px;
-      border:1px solid var(--stroke); background: rgba(255,255,255,.05);
-      color:var(--muted); font-size:12.5px; white-space:nowrap;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      color:var(--muted); font-size:12.5px;
     }
 
     .hero{margin-top:22px; display:grid; grid-template-columns: 1.15fr .85fr; gap:18px;}
-    @media (max-width: 840px){ .hero{grid-template-columns:1fr;}}
+    @media (max-width:840px){ .hero{grid-template-columns:1fr;} }
+
     .card{
-      border:1px solid var(--stroke); border-radius:18px;
-      background: var(--card); box-shadow: var(--shadow);
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      background: var(--card);
+      box-shadow: var(--shadow);
       padding:18px;
     }
-    .headline{font-size:34px; margin:2px 0 10px; letter-spacing:-.5px}
-    .sub{margin:0; color:var(--muted); font-size:15.5px; line-height:1.5}
+
+    .headline{font-size:34px; margin:2px 0 10px}
+    .sub{color:var(--muted); font-size:15.5px; line-height:1.5}
     .chips{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
     .chip{
       padding:10px 12px; border-radius:12px;
@@ -64,15 +68,6 @@
       background: rgba(0,0,0,.14);
       font-size:13px; color:#dbe6ff;
     }
-
-    .miniGrid{display:grid; gap:12px}
-    .mini{
-      padding:14px; border-radius:16px;
-      border:1px solid var(--stroke);
-      background: rgba(0,0,0,.16);
-    }
-    .mini b{display:block; margin-bottom:6px}
-    .mini span{color:var(--muted); font-size:13px; line-height:1.4}
 
     .accordion{margin-top:18px}
     details{
@@ -84,13 +79,20 @@
     }
     summary{
       cursor:pointer;
-      list-style:none;
-      display:flex; justify-content:space-between; align-items:center;
+      display:flex; justify-content:space-between;
       font-weight:700;
     }
-    summary::-webkit-details-marker{display:none}
-    .k{color:var(--muted); font-weight:600; font-size:12px}
+    .k{color:var(--muted); font-size:12px}
     .detailsBody{margin-top:10px; color:var(--muted); font-size:13.5px; line-height:1.55}
+
+    .miniGrid{display:grid; gap:12px}
+    .mini{
+      padding:14px; border-radius:16px;
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.16);
+    }
+    .mini b{display:block; margin-bottom:6px}
+    .mini span{color:var(--muted); font-size:13px}
 
     .ctaBar{
       position:fixed; left:0; right:0; bottom:0;
@@ -102,24 +104,21 @@
       z-index:99;
     }
     .cta{
-      width:min(980px, 96vw);
-      display:flex; gap:10px; align-items:center; justify-content:space-between;
+      width:min(980px,96vw);
+      display:flex; justify-content:space-between; align-items:center;
+      gap:10px;
     }
     .cta .txt{color:var(--muted); font-size:13px}
     .btn{
-      display:inline-flex; align-items:center; gap:10px;
       padding:12px 16px; border-radius:14px;
       text-decoration:none; font-weight:800;
       color:#0b1220;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
       box-shadow: 0 10px 24px rgba(74,163,255,.25);
-      white-space:nowrap;
     }
-    .btn:active{transform: translateY(1px)}
-    .tiny{font-size:12px; color:var(--muted); margin-top:10px}
-    .rightHint{display:flex; flex-direction:column; gap:4px; align-items:flex-end}
   </style>
 </head>
+
 <body>
   <div class="wrap">
 
@@ -133,98 +132,91 @@
           <p>Sistemas sob medida • Automação • Dados e relatórios • Integrações</p>
         </div>
       </div>
-      <div class="rightHint">
-        <div class="pill">⚡ Orçamento rápido no WhatsApp</div>
-      
-      </div>
+      <div class="pill">⚡ Orçamento rápido no WhatsApp</div>
     </div>
 
     <div class="hero">
+
+      <!-- CARD PRINCIPAL -->
       <div class="card">
         <div class="headline">Organize sua empresa com tecnologia sob medida.</div>
         <p class="sub">
           A Xzin Tech desenvolve sistemas e automações que reduzem trabalho manual,
-          organizam dados e dão controle real sobre a operação — do estoque ao relatório.
+          organizam dados e dão controle real sobre a operação.
         </p>
 
         <div class="chips">
           <div class="chip">💻 Sistemas Web & Desktop</div>
-          <div class="chip">🤖 Automação & Bots (WhatsApp)</div>
+          <div class="chip">🤖 Automação & Bots</div>
           <div class="chip">🗄️ Banco de Dados</div>
-          <div class="chip">📊 Relatórios & Levantamentos</div>
+          <div class="chip">📊 Relatórios</div>
         </div>
 
         <div class="accordion">
           <details>
             <summary>O problema que resolvemos <span class="k">ver</span></summary>
             <div class="detailsBody">
-              Processos manuais, planilhas soltas, dados espalhados, estoque sem controle e relatórios que demoram.
+              Processos manuais, planilhas soltas, dados espalhados e falta de controle.
               Transformamos isso em sistema, organização e previsibilidade.
             </div>
           </details>
 
           <details>
-            <summary>Como funciona (simples) <span class="k">ver</span></summary>
+            <summary>Como funciona <span class="k">ver</span></summary>
             <div class="detailsBody">
-              1) Diagnóstico rápido da sua rotina • 2) Estruturamos a solução ideal •
-              3) Desenvolvemos e implantamos • 4) Suporte e evolução contínua.
+              1) Diagnóstico da operação • 2) Desenvolvimento sob medida •
+              3) Implantação completa • 4) Suporte e evolução contínua.
             </div>
           </details>
+        </div>
 
-          <details>
-            <summary>Autoridade (sem papo) <span class="k">ver</span></summary>
-            <div class="detailsBody">
-              Experiência prática construindo sistemas, automações e organização de dados para operações reais.
-              Foco em solução simples de usar, estável e que entrega resultado.
-            </div>
-         </details>
-</div>
+        <hr style="margin:22px 0;border:none;border-top:1px solid rgba(255,255,255,.08);">
 
-<hr style="margin:22px 0;border:none;border-top:1px solid rgba(255,255,255,.08);">
+        <h3 style="margin:10px 0 12px;font-size:16px;color:#cbd5e1;">
+          Aplicável para negócios como:
+        </h3>
 
-<h3 style="margin:10px 0 12px;font-size:16px;color:#cbd5e1;">
-  Aplicável para negócios como:
-</h3>
+        <ul style="list-style:none;padding:0;margin:0;color:#b7c4e5;font-size:14px;line-height:1.7;">
+          <li>• Lanchonetes (controle de estoque e pedidos)</li>
+          <li>• Barbearias (agenda e organização financeira)</li>
+          <li>• Comércio local (vendas e relatórios)</li>
+          <li>• Empresas que precisam automatizar atendimento</li>
+        </ul>
 
-<ul style="list-style:none;padding:0;margin:0;color:#b7c4e5;font-size:14px;line-height:1.7;">
-  <li>• Lanchonetes (controle de estoque e pedidos)</li>
-  <li>• Barbearias (agenda e organização financeira)</li>
-  <li>• Comércio local (vendas e relatórios)</li>
-  <li>• Empresas que precisam automatizar atendimento</li>
-</ul>
+      </div>
 
-</div> <!-- FECHA A PRIMEIRA CARD -->
-<div class="card">
+      <!-- CARD LATERAL -->
+      <div class="card">
         <div class="miniGrid">
           <div class="mini">
             <b>✅ Sistema completo</b>
-            <span>Gestão • estoque • vendas • usuários • relatórios • controle interno.</span>
+            <span>Gestão • estoque • vendas • usuários • relatórios.</span>
           </div>
           <div class="mini">
             <b>✅ Automação</b>
-            <span>WhatsApp • bots • integrações • rotinas automáticas para ganhar tempo.</span>
+            <span>WhatsApp • bots • rotinas automáticas.</span>
           </div>
           <div class="mini">
             <b>✅ Dados organizados</b>
-            <span>Banco estruturado • consultas • relatórios • dashboards estratégicos.</span>
+            <span>Banco estruturado • consultas • dashboards.</span>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 
-  <!-- CTA fixo -->
   <div class="ctaBar">
     <div class="cta">
       <div class="txt">
-        Quer orçamento? Diga seu tipo de empresa e o que precisa organizar/automatizar.
+        Quer orçamento? Fale direto conosco.
       </div>
       <a class="btn" target="_blank"
-         href="https://wa.me/5581985206212?text=Olá,%20vim%20pelo%20site%20da%20Xzin%20Tech%20e%20quero%20um%20orçamento."
+         href="https://wa.me/5581985206212?text=Olá,%20vim%20pelo%20site%20da%20Xzin%20Tech%20e%20quero%20um%20orçamento.">
         🚀 Solicitar orçamento
       </a>
     </div>
   </div>
+
 </body>
 </html>
