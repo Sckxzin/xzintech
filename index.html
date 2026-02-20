@@ -1,128 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xzin Tech | Sistemas e Automação</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0f172a;
-      color: #ffffff;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xzin Tech | Sistemas e Automação</title>
 
-    header {
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-    }
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg,#0b1220,#111a2f);
+  color:#fff;
+}
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+section{
+  padding:100px 20px;
+  max-width:1100px;
+  margin:auto;
+}
 
-    p {
-      max-width: 600px;
-      margin: 10px auto;
-      color: #cbd5e1;
-      font-size: 18px;
-    }
+h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 28px;
-      background-color: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+h2{
+  font-size:34px;
+  margin-bottom:40px;
+  text-align:center;
+}
 
-    .btn:hover {
-      background-color: #1d4ed8;
-    }
+p{
+  color:#cbd5e1;
+  line-height:1.6;
+}
 
-    section {
-      padding: 60px 20px;
-    }
+.hero{
+  text-align:center;
+  padding-top:140px;
+  padding-bottom:140px;
+}
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:16px 32px;
+  background:#2563eb;
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+  transition:0.3s;
+}
 
-    .card {
-      background-color: #1e293b;
-      padding: 25px;
-      width: 280px;
-      border-radius: 10px;
-    }
+.btn:hover{
+  background:#1d4ed8;
+  box-shadow:0 0 20px rgba(37,99,235,0.6);
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
+.problem-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
 
-    footer {
-      padding: 30px;
-      background-color: #0b1120;
-      font-size: 14px;
-      color: #94a3b8;
-    }
+.problem-item{
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
+  width:240px;
+  text-align:center;
+}
 
-  </style>
+.solutions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
+}
+
+.solution-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:12px;
+  width:280px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.solution-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 25px rgba(37,99,235,0.4);
+}
+
+.steps{
+  text-align:center;
+  font-size:20px;
+  line-height:2;
+}
+
+.authority{
+  background:#0f172a;
+  padding:60px;
+  border-radius:15px;
+}
+
+.cta{
+  text-align:center;
+  padding-bottom:140px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#070d18;
+  color:#94a3b8;
+  font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>Xzin Tech</h1>
-  <p>Sistemas sob medida, automação e organização inteligente para empresas que querem evoluir.</p>
+<!-- HERO -->
+<section class="hero">
+  <h1>Sistemas e automação para organizar sua empresa de verdade.</h1>
+  <p>Desenvolvemos soluções sob medida para comércio e empresas que querem controle, eficiência e crescimento.</p>
   <a href="https://wa.me/55SEUNUMERO?text=Olá,%20vim%20pelo%20site%20da%20Xzin%20Tech%20e%20quero%20solicitar%20um%20orçamento." target="_blank" class="btn">
-    Solicitar Orçamento
+    Solicitar orçamento
   </a>
-</header>
+</section>
 
+<!-- PROBLEMA -->
 <section>
-  <h2>O que fazemos</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>💻 Sistemas Personalizados</h3>
-      <p>Desenvolvimento de sistemas sob medida para controle de estoque, vendas e gestão empresarial.</p>
+  <h2>Sua empresa ainda controla tudo manualmente?</h2>
+  <div class="problem-list">
+    <div class="problem-item">Estoque desorganizado</div>
+    <div class="problem-item">Vendas sem relatório</div>
+    <div class="problem-item">Informações espalhadas</div>
+    <div class="problem-item">Processos manuais</div>
+  </div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section>
+  <h2>Nossas soluções</h2>
+  <div class="solutions">
+    <div class="solution-card">
+      <h3>💻 Sistemas personalizados</h3>
+      <p>Controle de estoque, vendas e gestão empresarial sob medida para sua realidade.</p>
     </div>
 
-    <div class="card">
-      <h3>🤖 Automação Inteligente</h3>
-      <p>Integrações e automações para otimizar processos e eliminar tarefas manuais.</p>
+    <div class="solution-card">
+      <h3>🤖 Automação e integrações</h3>
+      <p>Elimine tarefas repetitivas com automações inteligentes e integrações estratégicas.</p>
     </div>
 
-    <div class="card">
-      <h3>🗄️ Organização de Dados</h3>
-      <p>Estruturação de banco de dados, relatórios e controle estratégico de informações.</p>
+    <div class="solution-card">
+      <h3>🗄️ Estruturação e banco de dados</h3>
+      <p>Organize suas informações com relatórios claros e controle real do negócio.</p>
     </div>
   </div>
 </section>
 
+<!-- COMO FUNCIONA -->
 <section>
-  <h2>Como Funciona</h2>
-  <p>1. Entendemos sua necessidade</p>
-  <p>2. Desenvolvemos a solução ideal</p>
-  <p>3. Implantamos e organizamos seu sistema</p>
+  <h2>Como funciona</h2>
+  <div class="steps">
+    1️⃣ Entendemos sua necessidade<br>
+    2️⃣ Desenvolvemos a solução ideal<br>
+    3️⃣ Implantamos e organizamos seu sistema
+  </div>
 </section>
 
+<!-- AUTORIDADE -->
 <section>
-  <h2>Pronto para profissionalizar sua empresa?</h2>
-  <a href="https://wa.me/55SEUNUMERO?text=Olá,%20vim%20pelo%20site%20da%20Xzin%20Tech%20e%20quero%20solicitar%20um%20orçamento." target="_blank" class="btn">
-    Falar no WhatsApp
+  <div class="authority">
+    <h2>Por que escolher a Xzin Tech?</h2>
+    <p>
+      Experiência prática em gestão, desenvolvimento de sistemas e organização empresarial.
+      Trabalhamos com soluções reais, aplicadas e adaptadas à necessidade de cada empresa.
+    </p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <h2>Está na hora de profissionalizar sua empresa.</h2>
+  <a href="https://wa.me/55SEUNUMERO?text=Olá,%20vim%20pelo%20site%20da%20Xzin%20Tech%20e%20quero%20falar%20sobre%20uma%20solução." target="_blank" class="btn">
+    🚀 Falar no WhatsApp
   </a>
 </section>
 
 <footer>
-  © 2025 Xzin Tech — Sistemas e Aplicações
+© 2025 Xzin Tech — Sistemas e Aplicações
 </footer>
 
 </body>
